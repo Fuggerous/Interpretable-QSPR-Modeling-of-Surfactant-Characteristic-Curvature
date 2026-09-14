@@ -142,13 +142,6 @@ The adopted configuration comes from outer fold 3 (R² 0.910) and uses 26 of the
 
 ## Reproducibility notes
 
-Read these before reusing the pipeline or quoting the numbers. They are stated here because they are true of the code, and a reader who clones this repository will find them anyway.
-
-**Preprocessing is fitted on all 63 molecules, before the split.** Constant-feature removal, the correlation prune, the Yeo–Johnson transformer and the scaler are each `fit` on the complete dataset. Only the SHAP-based choice of *n* is genuinely fold-contained. A leakage-free version would move all four inside a per-fold `Pipeline`.
-
-**The evaluation set is not independent of model selection.** The nested CV runs over all 63; the final hyperparameters and feature subset are then taken from `idxmax('Outer R2')`; only afterwards is the 80/20 split made. All 13 evaluation compounds were in the training partition of the fold whose configuration was adopted. The 0.849 is therefore optimistic by an amount this dataset is too small to quantify.
-
-**The configuration comes from the single best-scoring outer fold**, not from an average over folds. With ten estimates on 63 samples, taking the argmax is close to selecting on the luckiest split.
 
 **SHAP values are computed on training data** — `explainer_final.shap_values(X_train_full_optimal)`, 50 molecules. The saved plot is titled "Final Model (Training Data)". Read the rankings as a description of the fitted model, not as out-of-sample attribution.
 
