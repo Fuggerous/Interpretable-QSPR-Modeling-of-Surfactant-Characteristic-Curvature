@@ -1,0 +1,1 @@
+# Interpretable-QSPR-Modeling-of-Surfactant-Characteristic-Curvature
