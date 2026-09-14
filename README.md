@@ -158,7 +158,7 @@ The C<sub>c</sub> values are compiled from 16 published sources; cite those orig
 
 ## License
 
-Not yet licensed — by default this means all rights reserved, which will block reuse and is likely to be queried during peer review. The usual pairing for work like this is MIT for the code and CC BY 4.0 for the dataset.
+Not yet licensed
 
 ## Contact
 
