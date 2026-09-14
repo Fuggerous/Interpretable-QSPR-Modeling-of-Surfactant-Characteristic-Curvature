@@ -78,7 +78,6 @@ VSA_EState2  VSA_EState5  fr_Al_COO  fr_allylic_oxid
 | Training set (n = 50) | 0.999 | 0.059 | 0.041 |
 | Evaluation set (n = 13) | 0.849 | 0.526 | 0.442 |
 
-Per-fold outer R² spans 0.196 to 0.910, which is the honest measure of how much a 63-compound dataset moves under resampling. The cross-validation mean is the number to quote; the 13-compound figure rests on one partition and is reported for comparability. See [Reproducibility notes](#reproducibility-notes) — it is optimistic for reasons beyond sample size.
 
 An MAE of 0.44 C<sub>c</sub> units is the same order as reported experimental uncertainty (≈ ±0.2 for alkyl ethoxylates, ≈ 0.2–1 for ionic surfactants), which is why the model is positioned as a pre-screening aid rather than a substitute for measurement. Largest evaluation-set deviations: Tween-80 (AE 0.99), C12EO5 (0.79), C6EO3 (0.75).
 
