@@ -1,0 +1,31 @@
+# Environment used to produce the results in the manuscript.
+# Versions read from the interpreter that ran the notebook
+# (CPython 3.12, Windows x64).
+
+# --- core scientific stack ---
+numpy==2.0.1
+pandas==2.3.3
+scipy==1.13.1
+
+# --- cheminformatics ---
+rdkit==2024.3.5
+
+# --- machine learning ---
+scikit-learn==1.4.2
+xgboost==2.1.0
+joblib==1.4.2
+threadpoolctl==3.5.0
+
+# --- interpretability ---
+shap==0.46.0
+slicer==0.0.8
+
+# --- plotting ---
+matplotlib==3.10.7
+seaborn==0.13.2
+
+# --- I/O and notebook ---
+openpyxl==3.1.5
+tqdm==4.66.5
+jupyterlab
+ipykernel
