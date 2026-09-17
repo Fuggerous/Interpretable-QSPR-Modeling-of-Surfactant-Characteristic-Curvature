@@ -76,7 +76,7 @@ VSA_EState2  VSA_EState5  fr_Al_COO  fr_allylic_oxid
 |---|---|---|---|
 | Nested 10-fold CV, mean over outer folds | **0.601** | 0.549 | 0.416 |
 | Training set (n = 50) | 0.999 | 0.059 | 0.041 |
-| Evaluation set (n = 13) | 0.849 | 0.526 | 0.442 |
+| Test set (n = 13) | 0.849 | 0.526 | 0.442 |
 
 
 An MAE of 0.44 C<sub>c</sub> units is the same order as reported experimental uncertainty (≈ ±0.2 for alkyl ethoxylates, ≈ 0.2–1 for ionic surfactants), which is why the model is positioned as a pre-screening aid rather than a substitute for measurement. Largest evaluation-set deviations: Tween-80 (AE 0.99), C12EO5 (0.79), C6EO3 (0.75).
